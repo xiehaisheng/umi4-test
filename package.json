@@ -1,0 +1,31 @@
+{
+  "private": true,
+  "author": "鑫鹏 <meet201610@163.com>",
+  "scripts": {
+    "build": "umi build",
+    "dev": "umi dev",
+    "postinstall": "umi setup",
+    "setup": "umi setup",
+    "start": "npm run dev",
+    "lint": "umi lint"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,css,less}": [
+      "umi lint"
+    ]
+  },
+  "dependencies": {
+    "antd": "^5.1.7",
+    "umi": "^4.0.50",
+    "umi-request": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@umijs/lint": "^4.0.50",
+    "eslint": "^8.33.0",
+    "lint-staged": "^13.1.1",
+    "stylelint": "^14.16.1",
+    "typescript": "^4.1.2"
+  }
+}

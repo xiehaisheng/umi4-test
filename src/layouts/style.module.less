@@ -1,0 +1,40 @@
+.layout {
+  height: 100%;
+
+  :global {
+    .header {
+      height: 56px;
+      line-height: 56px;
+      background: #FFF;
+      border-bottom: 1px solid #e6e6e6;
+      padding: 0;
+      z-index: 1;
+      display: flex;
+      // justify-content: flex-end;
+      justify-content: space-between;
+
+      .logo {
+        // background: url("../assets/logo.png") center center no-repeat;
+        width: 160px;
+        background-size: contain;
+      }
+
+      .title {
+        padding-left: 20px;
+        font-weight: 500;
+        color: #292929;
+        // width: 200px;
+        // border-right: 1px solid #e6e6e6;
+      }
+    }
+
+    .menuLayout {
+      overflow-y: auto;
+      border-right: 1px solid #E6E6E6;
+    }
+
+    .contentLayout {
+      overflow: auto;
+    }
+  }
+}
