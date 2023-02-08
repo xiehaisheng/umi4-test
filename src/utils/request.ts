@@ -49,7 +49,7 @@ const errorHandler = (error: { response: any }) => {
  * 配置request请求时的默认参数
  */
 let showErr = false;
-// let u = "";
+let u = "";
 const request = extend({
   errorHandler,
   // 默认错误处理
@@ -59,7 +59,7 @@ const request = extend({
 request.interceptors.request.use((url: string, options?: any): object => {
   const { showPublicErr = true } = options;
   showErr = showPublicErr;
-  // u = url;
+  u = url;
   return {
     url,
     options: { ...options },
