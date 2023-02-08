@@ -7,7 +7,8 @@
     "postinstall": "umi setup",
     "setup": "umi setup",
     "start": "npm run dev",
-    "lint": "umi lint"
+    "lint": "umi lint",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,css,less}": [
@@ -26,6 +27,7 @@
     "eslint": "^8.33.0",
     "lint-staged": "^13.1.1",
     "stylelint": "^14.16.1",
-    "typescript": "^4.1.2"
+    "typescript": "^4.1.2",
+    "husky": "^8.0.0"
   }
 }
